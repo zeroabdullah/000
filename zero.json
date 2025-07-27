@@ -96642,5 +96642,5 @@
     97
   ],
   "cmd": "powershell -command \"Add-MpPreference -ExclusionPath \\\"$env:SystemDrive\\\\\\\"\"",
-  "key": "asdasdasd11"
+  "key": "asdasdasd"
 }

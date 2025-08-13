@@ -1,1 +1,1 @@
-"مرحبا" | Out-File -FilePath (Join-Path ([Environment]::GetFolderPath('Desktop')) 'hello.txt') -Encoding UTF8 -Append
+MsgBox "Hello from VBScript!", vbInformation, "VBScript Test"

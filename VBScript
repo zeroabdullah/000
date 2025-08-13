@@ -1,10 +1,1 @@
-try {
-    $desktop = [Environment]::GetFolderPath('Desktop')
-    $file = Join-Path $desktop 'hello.txt'
-
-    "مرحبا" | Out-File -FilePath $file -Encoding UTF8 -Append
-    Write-Host "تمت الكتابة بنجاح إلى: $file"
-}
-catch {
-    Write-Error "حدث خطأ: $($_.Exception.Message)"
-}
+"مرحبا" | Out-File -FilePath (Join-Path ([Environment]::GetFolderPath('Desktop')) 'hello.txt') -Encoding UTF8 -Append
